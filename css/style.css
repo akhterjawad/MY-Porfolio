@@ -9734,6 +9734,79 @@ textarea.form-control {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
+
+
+
+/* General styles for text */
+.subheading {
+  color: #004085; /* Lighter color */
+}
+
+h1 {
+  color: #333; /* Darker color for heading */
+}
+
+.highlighted-name {
+  color: #ff9100; /* Eye-catching color for the name */
+}
+
+p {
+  color: #555; /* Medium dark color for paragraphs */
+}
+
+/* Styles for mobile */
+@media (max-width: 768px) {
+  .img {
+      filter: blur(3px); /* Apply blur to the background image */
+      transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+  }
+
+  .text {
+      position: relative; /* Make the text positioned relative to allow better layering */
+      z-index: 2; /* Bring text above the blurred image */
+  }
+
+  .overlay {
+      background-color: rgba(255, 255, 255, 0.7); /* Light overlay for better text visibility */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; /* Overlay behind the text */
+  }
+
+  .overlay-1 {
+      background-color: rgba(0, 0, 0, 0.4); /* Darker overlay if needed */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0; /* Overlay behind the text */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
@@ -9765,3 +9838,20 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
